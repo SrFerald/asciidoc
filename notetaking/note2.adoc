@@ -1,0 +1,27 @@
+.Alternativas disponibles
+====
+
+[discrete]
+== Alternativas
+
+image::screenshot.png[Imágen]
+
+.Alternativa 1
+[%collapsible]
+======
+Acción perteneciente a la alternativa 1.
+======
+
+.Alternativa 2
+[%collapsible]
+======
+Acción perteneciente a la alternativa 2.
+======
+
+====
+
+.Título de Admonition
+[CAUTION]
+====
+Contenido de Admonition (NOTE, TIP, WARNING, CAUTION, IMPORTANT)
+====

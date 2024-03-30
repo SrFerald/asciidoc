@@ -1,0 +1,150 @@
+= Título del documento
+:doctype: article
+:author: Francisco Fernando Valdivia Catata
+:authorinitials: FFVC
+:docdate: 2023-03-30
+:sectnums: |,all|
+:sectnumlevels: 3
+:stem: latexmath
+:toc: 
+:toc-title: Índice
+:table-caption: Tabla
+:table-number: 1
+:figure-caption: Figura
+:example-caption: Ejemplo
+:example-number: 1
+:listing-caption: Código
+:appendix-caption: Apéndice
+:sectlinks:
+:sectids:
+:sectanchors:
+:description: Este es un documento básico de Asciidoc. + \
+Creado por {author} ({authorinitials}) \
+el {docdate}
+
+[.lead]
+Preámbulo a la siguiente sección
+
+[.normal]
+Preámbulo a la siguiente sección
+
+[colophon]
+== Colofón
+
+[abstract]
+== Resumen
+
+[abstract]
+.Resumen
+--
+El presente documento es una guía rápida a Asciidoc en base a mi aprendizaje.
+
+El avance se registra en (((Github))) conforme aprendo por mi cuenta
+--
+
+[dedication]
+== Dedicatoria
+
+[index]
+== Índice
+
+[glossary]
+== Glosario
+
+variable:: descripción
+
+[%always]
+<<<
+
+== Textos
+
+=== Formato
+
+.Listas y formatos
+[upperroman%reversed]
+. *Negrita*
+. _Cursiva_
+. `Monoespaciado simple`
+. ```Monoespaciado compuesto```
+. #Resaltado#
+. ~sub{sp}&ndash;~índice
+. ^super{sp}&ndash;^índice
+[square]
+- [.underline]#subrayado#
+- [.overline]#sobrerayado#
+- [.line-through]#tachado#
+- [.big]#grande#
+- [.small]#pequeño#
+
+//-
+.Ejemplo avanzado
+* The header in AsciiDoc must start with a document title.
++
+----
+= Document Title
+----
++
+NOTE: Keep in mind that the header is optional.
+
+* Optional author and revision information lines immediately follow the document title.
++
+----
+= Document Title
+Doc Writer <doc.writer@asciidoc.org>
+v1.0, 2022-01-01
+----
+
+=== Variables
+
+[.text-center]
+{description}
+
+=== Citas
+
+Se hace referecia a <<dmm>>
+
+== Bloques
+
+.Título de literal
+....
+Verbatim literal (Texto)
+....
+
+.Título de listing
+[source,markdown]
+----
+Verbatim listing (source-listing,language)
+----
+
+.Título de quote
+[quote,Francisco Valdivia]
+____
+Compound quote (quote-verse,author)
+____
+
+.Título de sidebar
+****
+Compound sidebar
+****
+
+.Título de ejemplo
+====
+Compound example
+====
+
+.Título de pass
+++++
+Raw pass
+++++
+
+Aplicación práctica:
+
+include::note2.adoc[Nota2]
+
+[appendix]
+== Apéndice de sección
+
+[bibliography]
+== Bibliografía
+
+* [[[dmm]]] Dammert, A., Molinelli, F., & Carbajal, M. (2013). Teoría de la regulación económica. Lima: Fondo Editorial USMP.
