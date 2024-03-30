@@ -15,6 +15,7 @@
 :example-number: 1
 :listing-caption: Código
 :appendix-caption: Apéndice
+:icons: font
 :sectlinks:
 :sectids:
 :sectanchors:
@@ -78,13 +79,14 @@ variable:: descripción
 
 //-
 .Ejemplo avanzado
-* The header in AsciiDoc must start with a document title.
+* grandparent list item
 +
-----
-= Document Title
-----
+--
+** parent list item
+*** child list item
+--
 +
-NOTE: Keep in mind that the header is optional.
+NOTE: Admonition attached at the grandparent list item.
 
 * Optional author and revision information lines immediately follow the document title.
 +

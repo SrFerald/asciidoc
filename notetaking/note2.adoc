@@ -20,8 +20,8 @@ Acción perteneciente a la alternativa 2.
 
 ====
 
-.Título de Admonition
 [CAUTION]
+.Título de Admonition
 ====
 Contenido de Admonition (NOTE, TIP, WARNING, CAUTION, IMPORTANT)
 ====

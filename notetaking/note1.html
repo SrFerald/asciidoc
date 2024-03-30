@@ -438,6 +438,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="article">
 <div id="header">
@@ -453,7 +454,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_dedicatoria">Dedicatoria</a></li>
 <li><a href="#_índice">Índice</a></li>
 <li><a href="#_glosario">Glosario</a></li>
-<li><a href="#_textos">1. Textos</a></li>
+<li><a href="#_textos">1. Textos</a>
+<ul class="sectlevel2">
+<li><a href="#_formato">1.1. Formato</a></li>
+<li><a href="#_variables">1.2. Variables</a></li>
+<li><a href="#_citas">1.3. Citas</a></li>
+</ul>
+</li>
 <li><a href="#_bloques">2. Bloques</a></li>
 <li><a href="#_apéndice_de_sección">Apéndice A: Apéndice de sección</a></li>
 <li><a href="#_bibliografía">Bibliografía</a></li>
@@ -522,12 +529,114 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_textos"><a class="anchor" href="#_textos"></a><a class="link" href="#_textos">1. Textos</a></h2>
 <div class="sectionbody">
-<div class="paragraph text-right">
+<div class="sect2">
+<h3 id="_formato"><a class="anchor" href="#_formato"></a><a class="link" href="#_formato">1.1. Formato</a></h3>
+<div class="olist upperroman">
+<div class="title">Listas y formatos</div>
+<ol class="upperroman" type="I" reversed>
+<li>
+<p><strong>Negrita</strong></p>
+</li>
+<li>
+<p><em>Cursiva</em></p>
+</li>
+<li>
+<p><code>Monoespaciado simple</code></p>
+</li>
+<li>
+<p><code><code>Monoespaciado compuesto</code></code></p>
+</li>
+<li>
+<p><mark>Resaltado</mark></p>
+</li>
+<li>
+<p><sub>sub &ndash;</sub>índice</p>
+</li>
+<li>
+<p><sup>super &ndash;</sup>índice</p>
+<div class="ulist square">
+<ul class="square">
+<li>
+<p><span class="underline">subrayado</span></p>
+</li>
+<li>
+<p><span class="overline">sobrerayado</span></p>
+</li>
+<li>
+<p><span class="line-through">tachado</span></p>
+</li>
+<li>
+<p><span class="big">grande</span></p>
+</li>
+<li>
+<p><span class="small">pequeño</span></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="ulist">
+<div class="title">Ejemplo avanzado</div>
+<ul>
+<li>
+<p>grandparent list item</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>parent list item</p>
+<div class="ulist">
+<ul>
+<li>
+<p>child list item</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Admonition attached at the grandparent list item.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Optional author and revision information lines immediately follow the document title.</p>
+<div class="listingblock">
+<div class="content">
+<pre>= Document Title
+Doc Writer &lt;doc.writer@asciidoc.org&gt;
+v1.0, 2022-01-01</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_variables"><a class="anchor" href="#_variables"></a><a class="link" href="#_variables">1.2. Variables</a></h3>
+<div class="paragraph text-center">
 <p>Este es un documento básico de Asciidoc.<br>
 Creado por Francisco Fernando Valdivia Catata (FFVC) el 2023-03-30</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_citas"><a class="anchor" href="#_citas"></a><a class="link" href="#_citas">1.3. Citas</a></h3>
 <div class="paragraph">
 <p>Se hace referecia a <a href="#dmm">[dmm]</a></p>
+</div>
 </div>
 </div>
 </div>
@@ -608,7 +717,7 @@ Raw pass
 <table>
 <tr>
 <td class="icon">
-<div class="title">Caution</div>
+<i class="fa icon-caution" title="Caution"></i>
 </td>
 <td class="content">
 <div class="title">Título de Admonition</div>
@@ -642,7 +751,7 @@ Raw pass
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-03-30 02:46:40 -0500
+Last updated 2024-03-30 03:41:54 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">
