@@ -4,7 +4,7 @@
 [discrete]
 == Alternativas
 
-image::screenshot.png[Imágen]
+image::screenshot.png[]
 
 .Alternativa 1
 [%collapsible]

@@ -55,7 +55,6 @@ El avance se registra en (((Github))) conforme aprendo por mi cuenta
 variable:: descripción
 
 [%always]
-<<<
 
 == Textos
 
